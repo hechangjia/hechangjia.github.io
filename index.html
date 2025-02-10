@@ -260,6 +260,240 @@ mjx-container[display="true"] + br {
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/10/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Charlie">
+      <meta itemprop="description" content="无限进步">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Moderation-中庸">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/10/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/" class="post-title-link" itemprop="url">Demo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-02-10 17:50:00 / 修改时间：17:51:32" itemprop="dateCreated datePublished" datetime="2025-02-10T17:50:00+08:00">2025-02-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>[!巴塞尔问题(1644)] 证明<span class="math display">\[\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\]</span></p>
+</blockquote>
+<h3 id="从hilbert空间的角度证明">1. 从Hilbert空间的角度证明</h3>
+<blockquote>
+<p>[!想法的来源] 从函数<span
+class="math inline">\(f(x):=x\)</span>在Hilbert空上做单位正交基的分解的时候观察到此函数的"坐标"要么是常数，要么是<span
+class="math inline">\(\frac{2}{n}\)</span>,那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四个等价命题]]),我们就能得到<span
+class="math inline">\(\sum_{n\geq 1}\frac{1}{n^2}\)</span>?</p>
+</blockquote>
+<p>具体来说，<span class="math inline">\(L^2([0,2\pi]\to
+\mathbb{R})\)</span>的一组单位正交基是<span
+class="math display">\[e_0(x)=\frac{1}{\sqrt{2\pi}},e_1(x)=\frac{1}{\sqrt{\pi}}\cos(x),e_2(x)=\frac{1}{\sqrt{\pi}}\sin(x),e_3(x)=\frac{1}{\sqrt{\pi}}\cos(2x),e_4(x)=\frac{1}{\sqrt{\pi}}\sin(2x)\]</span>
+函数<span
+class="math inline">\(x\)</span>与单位正交基的内积的结果假设为<span
+class="math inline">\(a_n:=\int_{0}^{2\pi}xe_n(x)\,dx\)</span>，就能过计算发现<span
+class="math display">\[a_0=\sqrt{2}\pi^{3/2},a_{2k+1}=0,a_{2k}=-\frac{2}{k}\sqrt{\pi}\]</span>于是由于Parseval恒等式<span
+class="math display">\[\sum_{n\geq
+0}a_n^2=||x||_{L^2}^2\]</span>我们得到等式<span
+class="math display">\[\sum_{k\geq
+1}\frac{4\pi}{k^2}+2\pi^3=\frac{8}{3}\pi^3\]</span>于是便得到<span
+class="math display">\[\sum_{k\geq
+1}\frac{1}{k^2}=\frac{\pi^2}{6}\]</span></p>
+<h3 id="构造特定函数并考虑其傅里叶级数展开">2.
+构造特定函数并考虑其傅里叶级数展开</h3>
+<h3 id="从广义的幅角原理入手">3. 从广义的幅角原理入手</h3>
+<ul>
+<li>为何从幅角原理,而不是直接从留数定理入手?
+因为直接去构思，什么样的亚纯函数会具有<span
+class="math inline">\(\frac{1}{n^2}\)</span>的根是不好想的，但是考虑某个函数的零点是整数，确实很容易想到合适的例子。</li>
+</ul>
+<blockquote>
+<p>[!想法] 首先考虑广义的幅角原理，对于亚纯函数<span
+class="math inline">\(p\)</span>以及全纯函数<span
+class="math inline">\(q\)</span>而言，<span
+class="math display">\[\frac{1}{2\pi i }\int_{\gamma}
+\frac{p&#39;(z)}{p(z)}q(z)\,dz = \sum q(z_{0})N(z_0)-\sum
+q(z_p)N(z_p)\]</span>其中<span
+class="math inline">\(z_0\)</span>表示<span
+class="math inline">\(p\)</span>在<span
+class="math inline">\(\gamma\)</span>围成的区域当中的零点，<span
+class="math inline">\(z_p\)</span>表示极点,<span
+class="math inline">\(N(z_0),N(z_p)\)</span>分别表示二者的重数(或者称之为阶数)。既然如此，结合巴塞尔问题，我们希望有一个全纯函数<span
+class="math inline">\(p(z)\)</span>，其在<span
+class="math inline">\(\gamma\)</span>围成的区域里面有整数的零点。至于说<span
+class="math inline">\(\frac{1}{n^2}\)</span>,这倒是不用太过于在意，因为我们大可以取<span
+class="math inline">\(q(z)=\frac{1}{z^2}\)</span>，从而只要在<span
+class="math inline">\(n\)</span>处取零点，那么一定是可以得到<span
+class="math inline">\(\frac{1}{n^2}\)</span>的。那么什么样的函数在每个整数处都取零点呢？自然想到一个例子<span
+class="math display">\[p(z):=\sin(\pi
+z)\]</span>那么积分的部分就变成了对<span
+class="math display">\[\frac{\pi\cos(\pi z)}{\sin(\pi
+z)}\frac{1}{z^2}=\pi \frac{\cot(\pi
+z)}{z^2}\]</span>的积分。不过现在还存在一些问题：</p>
+<ol type="1">
+<li>如果<span class="math inline">\(\gamma\)</span>包含的区域包括<span
+class="math inline">\(z=0\)</span>的话，那么此时<span
+class="math inline">\(\frac{1}{z^2}\)</span>就不是一个全纯函数了，因为此函数在<span
+class="math inline">\(z=0\)</span>有二阶极点。不过好在这个构造是足够有用的，大不了重新考虑留数定理，毕竟广义的幅角原理也是由留数定理推导而来。</li>
+<li>我们要如何对付积分?按照[[用两种不同方式表述同一个对象]]的基本想法，但我想考虑对象<span
+class="math inline">\(A\)</span>的某个性质的时候，如果我能找一个相等的关系使得<span
+class="math inline">\(A=B\)</span>,并且<span
+class="math inline">\(B\)</span>更容易解决，那么目的就能达到。在当前的问题下，<span
+class="math inline">\(A\)</span>就是<span
+class="math inline">\(\zeta(2):=\sum_{n\geq
+1}\frac{1}{n^2}\)</span>，或者说被积分函数<span
+class="math inline">\(\pi \frac{\cot(\pi
+z)}{z^2}\)</span>的这些留数。而<span
+class="math inline">\(B\)</span>自然就是要求的积分，因为要求全部的<span
+class="math inline">\(\frac{1}{n^2}\)</span>的和，那么势必最后我们需要让曲线<span
+class="math inline">\(\gamma\)</span>扩张到无穷远。所以我们要求的是一个恰当的积分的极限。</li>
+</ol>
+</blockquote>
+<ul>
+<li>处理第一个问题： 令<span class="math inline">\(f(z):=\pi
+\frac{\cot(\pi z)}{z^2}\)</span>，此函数在整个复平面上的极点有两种:</li>
+</ul>
+<ol type="1">
+<li><span class="math inline">\(z =
+0\)</span>处有一个3阶极点，对应的留数为可以通过函数在此处的Laurent展开得到<span
+class="math display">\[f(z)=\frac{1}{z^3}-\frac{\pi^2}{3z}+O(z)\]</span>于是留数就等于<span
+class="math inline">\(-\frac{\pi^2}{3}\)</span>。</li>
+<li><span class="math inline">\(z=n\in
+\mathbb{Z}\setminus\{0\}\)</span>处有一阶极点，对应的留数就是<span
+class="math inline">\(\frac{1}{n^2}\)</span>。</li>
+</ol>
+<ul>
+<li>处理第二个问题： <span
+class="math inline">\(f(z)\)</span>在无穷远处的邻域内，增长情况如何?首先可以给函数换一个更好分析的形式，特别是对其中的三角函数。考虑欧拉公式，我们可以得到<span
+class="math display">\[f(z):=i\frac{e^{i\pi z}+e^{-i\pi z}}{e^{i\pi
+z}-e^{-i\pi
+z}}\frac{1}{z^2}\]</span>看到这个形式我们就知道，对任意的非整数的正实数<span
+class="math inline">\(R\)</span>，当<span
+class="math inline">\(|z|=R\)</span>的时候有<span
+class="math inline">\(|f(z)|=O\left(\frac{1}{R^2}\right)\)</span>。那么此时令<span
+class="math inline">\(\gamma_{R}:=\{|z|=R:z\in
+\mathbb{C}\}\)</span>以及<span class="math inline">\(N_{R}:=\lfloor
+R\rfloor\)</span>于是<span class="math display">\[\frac{1}{2\pi
+i}\int_{\gamma_{R}}f(z)\,dz = -\frac{\pi^2}{3}+\sum_{0&lt;|n|\leq
+N_{R}}\frac{1}{n^2}\]</span>于是我们只需要取<span
+class="math inline">\(R=N+\frac{1}{2}\)</span>,那么<span
+class="math display">\[\left|-\frac{\pi^2}{3}+\sum_{0&lt;|n|\leq
+N}\frac{1}{n^2}\right|=O\left(\frac{1}{N^2}\right)\]</span>于是当<span
+class="math inline">\(N\to \infty\)</span>，那么我们就得到<span
+class="math display">\[\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\]</span></li>
+<li>如果我们把上面的想法以及经验做一个抽象的话，那么就可以得到[[Abel-Plana求和公式]]。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/10/demo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Charlie">
+      <meta itemprop="description" content="无限进步">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Moderation-中庸">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/02/10/demo/" class="post-title-link" itemprop="url">demo</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-02-10 17:44:03 / 修改时间：17:47:30" itemprop="dateCreated datePublished" datetime="2025-02-10T17:44:03+08:00">2025-02-10</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p><span class="math inline">\(\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\)</span></p>
+<p><span class="math display">\[\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\]</span></p>
+<p><span class="math display">\[\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\]</span></p>
+<p><span class="math display">\[
+\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}
+\]</span></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/02/10/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -365,7 +599,7 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2025-02-10 01:04:49 / 修改时间：17:33:09" itemprop="dateCreated datePublished" datetime="2025-02-10T01:04:49+08:00">2025-02-10</time>
+              <time title="创建时间：2025-02-10 01:04:49 / 修改时间：17:43:57" itemprop="dateCreated datePublished" datetime="2025-02-10T01:04:49+08:00">2025-02-10</time>
             </span>
 
           
@@ -466,9 +700,13 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-name">标签</span>
       </div>
   </nav>
 </div>
