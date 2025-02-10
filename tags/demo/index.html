@@ -176,8 +176,8 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2025/02/10/readme/" itemprop="url">
-            <span itemprop="name">Readme</span>
+          <a class="post-title-link" href="/2025/02/10/demo/" itemprop="url">
+            <span itemprop="name">Demo</span>
           </a>
       </div>
 
@@ -196,8 +196,8 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2025/02/10/demo/" itemprop="url">
-            <span itemprop="name">Demo</span>
+          <a class="post-title-link" href="/2025/02/10/readme/" itemprop="url">
+            <span itemprop="name">Readme</span>
           </a>
       </div>
 
@@ -381,6 +381,19 @@
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
   

@@ -286,10 +286,16 @@ mjx-container[display="true"] + br {
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-02-10 17:44:03 / 修改时间：21:15:13" itemprop="dateCreated datePublished" datetime="2025-02-10T17:44:03+08:00">2025-02-10</time>
+              <time title="创建时间：2025-02-10 17:44:03" itemprop="dateCreated datePublished" datetime="2025-02-10T17:44:03+08:00">2025-02-10</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-02-11 04:13:25" itemprop="dateModified" datetime="2025-02-11T04:13:25+08:00">2025-02-11</time>
+              </span>
 
           
 
@@ -303,6 +309,25 @@ mjx-container[display="true"] + br {
 
       
           <p>ccc</p>
+<pre class="mermaid">graph LR
+  A[方形节点] --> B(圆角节点)
+  B --> C{条件判断}
+  C -->|是| D[结果1]
+  C -->|否| E[结果2]</pre>
+<pre class="mermaid">sequenceDiagram
+  Alice->>Bob: 发送消息
+  Bob-->>Alice: 确认收到
+  Alice->>Bob: 发送文件
+  Bob-->>Alice: 文件已接收</pre>
+<pre class="mermaid">gantt
+  title 项目计划
+  dateFormat YYYY-MM-DD
+  section 阶段A
+  任务1 :a1, 2023-10-01, 30d
+  任务2 :after a1, 20d
+  section 阶段B
+  任务3 :2023-11-01, 12d
+  任务4 : 24d</pre>
 
       
     </div>
@@ -853,6 +878,19 @@ target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment
 
 
 
+<script>
+if (document.querySelectorAll('pre.mermaid').length) {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/mermaid@8/dist/mermaid.min.js', () => {
+    mermaid.initialize({
+      theme    : 'forest',
+      logLevel : 3,
+      flowchart: { curve     : 'linear' },
+      gantt    : { axisFormat: '%m/%d/%Y' },
+      sequence : { actorMargin: 50 }
+    });
+  }, window.mermaid);
+}
+</script>
 
 
   
