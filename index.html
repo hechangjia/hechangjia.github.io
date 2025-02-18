@@ -1459,7 +1459,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #090fff;
+  background: #bd6369;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3360,7 +3360,7 @@ mjx-container[display="true"] + br {
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2025-02-11 15:54:41" itemprop="dateModified" datetime="2025-02-11T15:54:41+08:00">2025-02-11</time>
+                <time title="修改时间：2025-02-18 20:56:33" itemprop="dateModified" datetime="2025-02-18T20:56:33+08:00">2025-02-18</time>
               </span>
 
           
@@ -3394,22 +3394,6 @@ mjx-container[display="true"] + br {
   section 阶段B
   任务3 :2023-11-01, 12d
   任务4 : 24d</pre>
-<pre class="mermaid">classDiagram
-Class01 &lt;|-- AveryLongClass : Cool
-&lt;<interface>&gt; Class01
-Class09 --&gt; C2 : Where am I?
-Class09 --* C3
-Class09 --|&gt; Class07
-Class07 : equals()
-Class07 : Object[] elementData
-Class01 : size()
-Class01 : int chimp
-Class01 : int gorilla
-class Class10 {
-  &lt;<service>&gt;
-  int id
-  size()
-}</service></interface></pre>
 <pre class="mermaid">stateDiagram-v2
 [*] --&gt; Still
 Still --&gt; [*]
@@ -3430,44 +3414,6 @@ Crash --&gt; [*]</pre>
     section Go home
       Go downstairs: 5: Me
       Sit down: 3: Me</pre>
-<pre class="mermaid">C4Context
-title System Context diagram for Internet Banking System
-
-Person(customerA, "Banking Customer A", "A customer of the bank, with personal bank accounts.")
-Person(customerB, "Banking Customer B")
-Person_Ext(customerC, "Banking Customer C")
-System(SystemAA, "Internet Banking System", "Allows customers to view information about their bank accounts, and make payments.")
-
-Person(customerD, "Banking Customer D", "A customer of the bank, <br> with personal bank accounts.")
-
-Enterprise_Boundary(b1, "BankBoundary") {
-
-  SystemDb_Ext(SystemE, "Mainframe Banking System", "Stores all of the core banking information about customers, accounts, transactions, etc.")
-
-  System_Boundary(b2, "BankBoundary2") {
-    System(SystemA, "Banking System A")
-    System(SystemB, "Banking System B", "A system of the bank, with personal bank accounts.")
-  }
-
-  System_Ext(SystemC, "E-mail system", "The internal Microsoft Exchange e-mail system.")
-  SystemDb(SystemD, "Banking System D Database", "A system of the bank, with personal bank accounts.")
-
-  Boundary(b3, "BankBoundary3", "boundary") {
-    SystemQueue(SystemF, "Banking System F Queue", "A system of the bank, with personal bank accounts.")
-    SystemQueue_Ext(SystemG, "Banking System G Queue", "A system of the bank, with personal bank accounts.")
-  }
-}
-
-BiRel(customerA, SystemAA, "Uses")
-BiRel(SystemAA, SystemE, "Uses")
-Rel(SystemAA, SystemC, "Sends e-mails", "SMTP")
-Rel(SystemC, customerA, "Sends e-mails to")</pre>
-<pre class="mermaid">classDiagram
-  class Animal
-  class Mineral
-  style Animal fill:#f9f,stroke:#333,stroke-width:4px
-  style Mineral fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5</pre>
-<pre class="mermaid"></pre>
 
       
     </div>
