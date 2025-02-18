@@ -21,12 +21,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="[!note] 证明   $$\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}$$  1. 从Hilbert空间的角度证明  [!tip] 从函数$f(x):=x$在Hilbert空上做单位正交基的分解的时候观察到此函数的&quot;坐标&quot;要么是常数，要么是$\frac{2}{n}$,那么岂不是说，依照Parseval恒等式(参考[[Hilbert">
+  <meta name="description" content="[!note] 证明 \[\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}\]  1. 从Hilbert空间的角度证明  [!tip] 从函数\(f(x):=x\)在Hilbert空上做单位正交基的分解的时候观察到此函数的&quot;坐标&quot;要么是常数，要么是\(\frac{2}{n}\),那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Math">
 <meta property="og:url" content="http://example.com/2025/02/10/%E5%B7%B4%E5%A1%9E%E5%B0%94%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Moderation-中庸">
-<meta property="og:description" content="[!note] 证明   $$\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}$$  1. 从Hilbert空间的角度证明  [!tip] 从函数$f(x):=x$在Hilbert空上做单位正交基的分解的时候观察到此函数的&quot;坐标&quot;要么是常数，要么是$\frac{2}{n}$,那么岂不是说，依照Parseval恒等式(参考[[Hilbert">
+<meta property="og:description" content="[!note] 证明 \[\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}\]  1. 从Hilbert空间的角度证明  [!tip] 从函数\(f(x):=x\)在Hilbert空上做单位正交基的分解的时候观察到此函数的&quot;坐标&quot;要么是常数，要么是\(\frac{2}{n}\),那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-02-10T09:50:00.000Z">
 <meta property="article:modified_time" content="2025-02-12T17:30:44.630Z">
@@ -1464,7 +1464,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7d3420;
+  background: #78ffc1;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3152,6 +3152,11 @@ mjx-container + br {
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+        <li class="menu-item menu-item-diaries">
+
+    <a href="/categories/%E6%97%A5%E8%AE%B0/" rel="section"><i class="fa fa-book fa-fw"></i>diaries</a>
+
+  </li>
   </ul>
 </nav>
 
@@ -3225,56 +3230,68 @@ mjx-container + br {
 
       
         <blockquote>
-<p>[!note]<br>
-证明   $$\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}$$</p>
+<p>[!note] 证明 <span class="math display">\[\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\]</span></p>
 </blockquote>
-<h5 id="1-从Hilbert空间的角度证明">1. 从Hilbert空间的角度证明</h5>
+<h5 id="从hilbert空间的角度证明">1. 从Hilbert空间的角度证明</h5>
 <blockquote>
 <p>[!tip]</p>
-<h5 id="从函数-f-x-x-在Hilbert空上做单位正交基的分解的时候观察到此函数的-坐标-要么是常数，要么是-frac-2-n-那么岂不是说，依照Parseval恒等式-参考-Hilbert空间当中的基的四个等价命题-我们就能得到-sum-n-geq-1-frac-1-n-2">从函数$f(x):=x$在Hilbert空上做单位正交基的分解的时候观察到此函数的"坐标"要么是常数，要么是$\frac{2}{n}$,那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四个等价命题]]),我们就能得到$\sum_{n\geq 1}\frac{1}{n^2}$?</h5>
+<h5 id="从函数fxx在hilbert空上做单位正交基的分解的时候观察到此函数的坐标要么是常数要么是frac2n那么岂不是说依照parseval恒等式参考hilbert空间当中的基的四个等价命题我们就能得到sum_ngeq-1frac1n2">从函数<span class="math inline">\(f(x):=x\)</span>在Hilbert空上做单位正交基的分解的时候观察到此函数的"坐标"要么是常数，要么是<span class="math inline">\(\frac{2}{n}\)</span>,那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四个等价命题]]),我们就能得到<span class="math inline">\(\sum_{n\geq 1}\frac{1}{n^2}\)</span>?</h5>
 </blockquote>
-<h4 id="具体来说，-L-2-0-2-pi-to-mathbb-R-的一组单位正交基是-e-0-x-frac-1-sqrt-2-pi-e-1-x-frac-1-sqrt-pi-cos-x-e-2-x-frac-1-sqrt-pi-sin-x-e-3-x-frac-1-sqrt-pi-cos-2x-e-4-x-frac-1-sqrt-pi-sin-2x">具体来说， $$L^2([0,2\pi]\to \mathbb{R})$$  的一组单位正交基是$$e_0(x)=\frac{1}{\sqrt{2\pi}},e_1(x)=\frac{1}{\sqrt{\pi}}\cos(x),e_2(x)=\frac{1}{\sqrt{\pi}}\sin(x),e_3(x)=\frac{1}{\sqrt{\pi}}\cos(2x),e_4(x)=\frac{1}{\sqrt{\pi}}\sin(2x)$$</h4>
-<p>函数$x$与单位正交基的内积的结果假设为$a_n:=\int_{0}^{2\pi}xe_n(x),dx$，就能过计算发现$$a_0=\sqrt{2}\pi^{3/2},a_{2k+1}=0,a_{2k}=-\frac{2}{k}\sqrt{\pi}$$于是由于Parseval恒等式$$\sum_{n\geq 0}a_n^2=||x||<em>{L^2}^2$$我们得到等式$$\sum</em>{k\geq 1}\frac{4\pi}{k^2}+2\pi^3=\frac{8}{3}\pi^3$$于是便得到$$\sum_{k\geq 1}\frac{1}{k^2}=\frac{\pi^2}{6}$$</p>
-<h3 id="2-构造特定函数并考虑其傅里叶级数展开">2. 构造特定函数并考虑其傅里叶级数展开</h3>
-<h3 id="3-从广义的幅角原理入手">3. 从广义的幅角原理入手</h3>
+<h4 id="具体来说-l202pito-mathbbr-的一组单位正交基是e_0xfrac1sqrt2pie_1xfrac1sqrtpicosxe_2xfrac1sqrtpisinxe_3xfrac1sqrtpicos2xe_4xfrac1sqrtpisin2x">具体来说，
+<span class="math display">\[L^2([0,2\pi]\to \mathbb{R})\]</span>
+的一组单位正交基是<span class="math display">\[e_0(x)=\frac{1}{\sqrt{2\pi}},e_1(x)=\frac{1}{\sqrt{\pi}}\cos(x),e_2(x)=\frac{1}{\sqrt{\pi}}\sin(x),e_3(x)=\frac{1}{\sqrt{\pi}}\cos(2x),e_4(x)=\frac{1}{\sqrt{\pi}}\sin(2x)\]</span></h4>
+<p>函数<span class="math inline">\(x\)</span>与单位正交基的内积的结果假设为<span class="math inline">\(a_n:=\int_{0}^{2\pi}xe_n(x)\,dx\)</span>，就能过计算发现<span class="math display">\[a_0=\sqrt{2}\pi^{3/2},a_{2k+1}=0,a_{2k}=-\frac{2}{k}\sqrt{\pi}\]</span>于是由于Parseval恒等式<span class="math display">\[\sum_{n\geq
+0}a_n^2=||x||_{L^2}^2\]</span>我们得到等式<span class="math display">\[\sum_{k\geq
+1}\frac{4\pi}{k^2}+2\pi^3=\frac{8}{3}\pi^3\]</span>于是便得到<span class="math display">\[\sum_{k\geq
+1}\frac{1}{k^2}=\frac{\pi^2}{6}\]</span></p>
+<h3 id="构造特定函数并考虑其傅里叶级数展开">2.
+构造特定函数并考虑其傅里叶级数展开</h3>
+<h3 id="从广义的幅角原理入手">3. 从广义的幅角原理入手</h3>
 <ul>
-<li>为何从幅角原理,而不是直接从留数定理入手?<br>
-因为直接去构思，什么样的亚纯函数会具有$\frac{1}{n^2}$的根是不好想的，但是考虑某个函数的零点是整数，确实很容易想到合适的例子。</li>
+<li>为何从幅角原理,而不是直接从留数定理入手?
+因为直接去构思，什么样的亚纯函数会具有<span class="math inline">\(\frac{1}{n^2}\)</span>的根是不好想的，但是考虑某个函数的零点是整数，确实很容易想到合适的例子。</li>
 </ul>
 <blockquote>
-<p>[!想法]<br>
-首先考虑广义的幅角原理，对于亚纯函数$p$以及全纯函数$q$而言，$$\frac{1}{2\pi i }\int_{\gamma} \frac{p’(z)}{p(z)}q(z),dz = \sum q(z_{0})N(z_0)-\sum q(z_p)N(z_p)$$其中$z_0$表示$p$在$\gamma$围成的区域当中的零点，$z_p$表示极点,$N(z_0),N(z_p)$分别表示二者的重数(或者称之为阶数)。既然如此，结合巴塞尔问题，我们希望有一个全纯函数$p(z)$，其在$\gamma$围成的区域里面有整数的零点。至于说$\frac{1}{n^2}$,这倒是不用太过于在意，因为我们大可以取$q(z)=\frac{1}{z^2}$，从而只要在$n$处取零点，那么一定是可以得到$\frac{1}{n^2}$的。那么什么样的函数在每个整数处都取零点呢？自然想到一个例子$$p(z):=\sin(\pi z)$$那么积分的部分就变成了对$$\frac{\pi\cos(\pi z)}{\sin(\pi z)}\frac{1}{z^2}=\pi \frac{\cot(\pi z)}{z^2}$$的积分。不过现在还存在一些问题：</p>
-<ol>
-<li>如果$\gamma$包含的区域包括$z=0$的话，那么此时$\frac{1}{z^2}$就不是一个全纯函数了，因为此函数在$z=0$有二阶极点。不过好在这个构造是足够有用的，大不了重新考虑留数定理，毕竟广义的幅角原理也是由留数定理推导而来。</li>
-<li>我们要如何对付积分?按照[[用两种不同方式表述同一个对象]]的基本想法，但我想考虑对象$A$的某个性质的时候，如果我能找一个相等的关系使得$A=B$,并且$B$更容易解决，那么目的就能达到。在当前的问题下，$A$就是$\zeta(2):=\sum_{n\geq 1}\frac{1}{n^2}$，或者说被积分函数$\pi \frac{\cot(\pi z)}{z^2}$的这些留数。而$B$自然就是要求的积分，因为要求全部的$\frac{1}{n^2}$的和，那么势必最后我们需要让曲线$\gamma$扩张到无穷远。所以我们要求的是一个恰当的积分的极限。</li>
+<p>[!想法] 首先考虑广义的幅角原理，对于亚纯函数<span class="math inline">\(p\)</span>以及全纯函数<span class="math inline">\(q\)</span>而言，<span class="math display">\[\frac{1}{2\pi i }\int_{\gamma}
+\frac{p'(z)}{p(z)}q(z)\,dz = \sum q(z_{0})N(z_0)-\sum
+q(z_p)N(z_p)\]</span>其中<span class="math inline">\(z_0\)</span>表示<span class="math inline">\(p\)</span>在<span class="math inline">\(\gamma\)</span>围成的区域当中的零点，<span class="math inline">\(z_p\)</span>表示极点,<span class="math inline">\(N(z_0),N(z_p)\)</span>分别表示二者的重数(或者称之为阶数)。既然如此，结合巴塞尔问题，我们希望有一个全纯函数<span class="math inline">\(p(z)\)</span>，其在<span class="math inline">\(\gamma\)</span>围成的区域里面有整数的零点。至于说<span class="math inline">\(\frac{1}{n^2}\)</span>,这倒是不用太过于在意，因为我们大可以取<span class="math inline">\(q(z)=\frac{1}{z^2}\)</span>，从而只要在<span class="math inline">\(n\)</span>处取零点，那么一定是可以得到<span class="math inline">\(\frac{1}{n^2}\)</span>的。那么什么样的函数在每个整数处都取零点呢？自然想到一个例子<span class="math display">\[p(z):=\sin(\pi
+z)\]</span>那么积分的部分就变成了对<span class="math display">\[\frac{\pi\cos(\pi z)}{\sin(\pi
+z)}\frac{1}{z^2}=\pi \frac{\cot(\pi
+z)}{z^2}\]</span>的积分。不过现在还存在一些问题：</p>
+<ol type="1">
+<li>如果<span class="math inline">\(\gamma\)</span>包含的区域包括<span class="math inline">\(z=0\)</span>的话，那么此时<span class="math inline">\(\frac{1}{z^2}\)</span>就不是一个全纯函数了，因为此函数在<span class="math inline">\(z=0\)</span>有二阶极点。不过好在这个构造是足够有用的，大不了重新考虑留数定理，毕竟广义的幅角原理也是由留数定理推导而来。</li>
+<li>我们要如何对付积分?按照[[用两种不同方式表述同一个对象]]的基本想法，但我想考虑对象<span class="math inline">\(A\)</span>的某个性质的时候，如果我能找一个相等的关系使得<span class="math inline">\(A=B\)</span>,并且<span class="math inline">\(B\)</span>更容易解决，那么目的就能达到。在当前的问题下，<span class="math inline">\(A\)</span>就是<span class="math inline">\(\zeta(2):=\sum_{n\geq
+1}\frac{1}{n^2}\)</span>，或者说被积分函数<span class="math inline">\(\pi \frac{\cot(\pi
+z)}{z^2}\)</span>的这些留数。而<span class="math inline">\(B\)</span>自然就是要求的积分，因为要求全部的<span class="math inline">\(\frac{1}{n^2}\)</span>的和，那么势必最后我们需要让曲线<span class="math inline">\(\gamma\)</span>扩张到无穷远。所以我们要求的是一个恰当的积分的极限。</li>
 </ol>
 </blockquote>
 <ul>
-<li>处理第一个问题：<br>
-令$f(z):=\pi \frac{\cot(\pi z)}{z^2}$，此函数在整个复平面上的极点有两种:</li>
+<li>处理第一个问题： 令<span class="math inline">\(f(z):=\pi
+\frac{\cot(\pi z)}{z^2}\)</span>，此函数在整个复平面上的极点有两种:</li>
 </ul>
-<ol>
-<li>$z = 0$处有一个3阶极点，对应的留数为可以通过函数在此处的Laurent展开得到$$f(z)=\frac{1}{z^3}-\frac{\pi^2}{3z}+O(z)$$于是留数就等于$-\frac{\pi^2}{3}$。</li>
-<li>$z=n\in \mathbb{Z}\setminus{0}$处有一阶极点，对应的留数就是$\frac{1}{n^2}$。</li>
+<ol type="1">
+<li><span class="math inline">\(z =
+0\)</span>处有一个3阶极点，对应的留数为可以通过函数在此处的Laurent展开得到<span class="math display">\[f(z)=\frac{1}{z^3}-\frac{\pi^2}{3z}+O(z)\]</span>于是留数就等于<span class="math inline">\(-\frac{\pi^2}{3}\)</span>。</li>
+<li><span class="math inline">\(z=n\in
+\mathbb{Z}\setminus\{0\}\)</span>处有一阶极点，对应的留数就是<span class="math inline">\(\frac{1}{n^2}\)</span>。</li>
 </ol>
 <ul>
-<li>
-<p>处理第二个问题：<br>
-$f(z)$在无穷远处的邻域内，增长情况如何?首先可以给函数换一个更好分析的形式，特别是对其中的三角函数。考虑欧拉公式，我们可以得到$$f(z):=i\frac{e^{i\pi z}+e^{-i\pi z}}{e^{i\pi z}-e^{-i\pi z}}\frac{1}{z^2}$$看到这个形式我们就知道，对任意的非整数的正实数$R$，当$|z|=R$的时候有$|f(z)|=O\left(\frac{1}{R^2}\right)$。那么此时令$\gamma_{R}:={|z|=R:z\in \mathbb{C}}$以及$N_{R}:=\lfloor R\rfloor$于是</p>
-</li>
-<li>
-<p>$$<br>
-\frac{1}{2\pi i}\int_{\gamma_{R}}f(z),dz = -\frac{\pi^2}{3}+\sum_{0&lt;|n|\leq N_{R}}\frac{1}{n^2}<br>
-$$</p>
-</li>
+<li><p>处理第二个问题： <span class="math inline">\(f(z)\)</span>在无穷远处的邻域内，增长情况如何?首先可以给函数换一个更好分析的形式，特别是对其中的三角函数。考虑欧拉公式，我们可以得到<span class="math display">\[f(z):=i\frac{e^{i\pi z}+e^{-i\pi z}}{e^{i\pi
+z}-e^{-i\pi
+z}}\frac{1}{z^2}\]</span>看到这个形式我们就知道，对任意的非整数的正实数<span class="math inline">\(R\)</span>，当<span class="math inline">\(|z|=R\)</span>的时候有<span class="math inline">\(|f(z)|=O\left(\frac{1}{R^2}\right)\)</span>。那么此时令<span class="math inline">\(\gamma_{R}:=\{|z|=R:z\in
+\mathbb{C}\}\)</span>以及<span class="math inline">\(N_{R}:=\lfloor
+R\rfloor\)</span>于是</p></li>
+<li><p><span class="math display">\[
+\frac{1}{2\pi i}\int_{\gamma_{R}}f(z)\,dz =
+-\frac{\pi^2}{3}+\sum_{0&lt;|n|\leq N_{R}}\frac{1}{n^2}
+\]</span></p></li>
 <li></li>
-<li>
-<p>于是我们只需要取$R=N+\frac{1}{2}$,那么$$\left|-\frac{\pi^2}{3}+\sum_{0&lt;|n|\leq N}\frac{1}{n^2}\right|=O\left(\frac{1}{N^2}\right)$$于是当$N\to \infty$，那么我们就得到$$\sum_{n\geq 1}\frac{1}{n^2}=\frac{\pi^2}{6}$$</p>
-</li>
-<li>
-<p>如果我们把上面的想法以及经验做一个抽象的话，那么就可以得到[[Abel-Plana求和公式]]。</p>
-<hr>
-</li>
+<li><p>于是我们只需要取<span class="math inline">\(R=N+\frac{1}{2}\)</span>,那么<span class="math display">\[\left|-\frac{\pi^2}{3}+\sum_{0&lt;|n|\leq
+N}\frac{1}{n^2}\right|=O\left(\frac{1}{N^2}\right)\]</span>于是当<span class="math inline">\(N\to \infty\)</span>，那么我们就得到<span class="math display">\[\sum_{n\geq
+1}\frac{1}{n^2}=\frac{\pi^2}{6}\]</span></p></li>
+<li><p>如果我们把上面的想法以及经验做一个抽象的话，那么就可以得到[[Abel-Plana求和公式]]。</p>
+<hr></li>
 </ul>
 
     </div>
@@ -3366,8 +3383,8 @@ $$</p>
       <i class="fa fa-chevron-left"></i> Demo
     </a></div>
       <div class="post-nav-item">
-    <a href="/2025/02/13/20250213020323/" rel="next" title="20250213020323">
-      20250213020323 <i class="fa fa-chevron-right"></i>
+    <a href="/2025/02/13/20250213020323/" rel="next" title="Test1">
+      Test1 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
       </footer>
@@ -3407,7 +3424,10 @@ $$</p>
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-%E4%BB%8EHilbert%E7%A9%BA%E9%97%B4%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%81%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">1. 从Hilbert空间的角度证明</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%8E%E5%87%BD%E6%95%B0-f-x-x-%E5%9C%A8Hilbert%E7%A9%BA%E4%B8%8A%E5%81%9A%E5%8D%95%E4%BD%8D%E6%AD%A3%E4%BA%A4%E5%9F%BA%E7%9A%84%E5%88%86%E8%A7%A3%E7%9A%84%E6%97%B6%E5%80%99%E8%A7%82%E5%AF%9F%E5%88%B0%E6%AD%A4%E5%87%BD%E6%95%B0%E7%9A%84-%E5%9D%90%E6%A0%87-%E8%A6%81%E4%B9%88%E6%98%AF%E5%B8%B8%E6%95%B0%EF%BC%8C%E8%A6%81%E4%B9%88%E6%98%AF-frac-2-n-%E9%82%A3%E4%B9%88%E5%B2%82%E4%B8%8D%E6%98%AF%E8%AF%B4%EF%BC%8C%E4%BE%9D%E7%85%A7Parseval%E6%81%92%E7%AD%89%E5%BC%8F-%E5%8F%82%E8%80%83-Hilbert%E7%A9%BA%E9%97%B4%E5%BD%93%E4%B8%AD%E7%9A%84%E5%9F%BA%E7%9A%84%E5%9B%9B%E4%B8%AA%E7%AD%89%E4%BB%B7%E5%91%BD%E9%A2%98-%E6%88%91%E4%BB%AC%E5%B0%B1%E8%83%BD%E5%BE%97%E5%88%B0-sum-n-geq-1-frac-1-n-2"><span class="nav-number">2.</span> <span class="nav-text">从函数$f(x):=x$在Hilbert空上做单位正交基的分解的时候观察到此函数的"坐标"要么是常数，要么是$\frac{2}{n}$,那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四个等价命题]]),我们就能得到$\sum_{n\geq 1}\frac{1}{n^2}$?</span></a></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%9D%A5%E8%AF%B4%EF%BC%8C-L-2-0-2-pi-to-mathbb-R-%E7%9A%84%E4%B8%80%E7%BB%84%E5%8D%95%E4%BD%8D%E6%AD%A3%E4%BA%A4%E5%9F%BA%E6%98%AF-e-0-x-frac-1-sqrt-2-pi-e-1-x-frac-1-sqrt-pi-cos-x-e-2-x-frac-1-sqrt-pi-sin-x-e-3-x-frac-1-sqrt-pi-cos-2x-e-4-x-frac-1-sqrt-pi-sin-2x"><span class="nav-number"></span> <span class="nav-text">具体来说， $$L^2([0,2\pi]\to \mathbb{R})$$  的一组单位正交基是$$e_0(x)=\frac{1}{\sqrt{2\pi}},e_1(x)=\frac{1}{\sqrt{\pi}}\cos(x),e_2(x)=\frac{1}{\sqrt{\pi}}\sin(x),e_3(x)=\frac{1}{\sqrt{\pi}}\cos(2x),e_4(x)=\frac{1}{\sqrt{\pi}}\sin(2x)$$</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%9E%84%E9%80%A0%E7%89%B9%E5%AE%9A%E5%87%BD%E6%95%B0%E5%B9%B6%E8%80%83%E8%99%91%E5%85%B6%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E5%B1%95%E5%BC%80"><span class="nav-number"></span> <span class="nav-text">2. 构造特定函数并考虑其傅里叶级数展开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E4%BB%8E%E5%B9%BF%E4%B9%89%E7%9A%84%E5%B9%85%E8%A7%92%E5%8E%9F%E7%90%86%E5%85%A5%E6%89%8B"><span class="nav-number"></span> <span class="nav-text">3. 从广义的幅角原理入手</span></a></li></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%8Ehilbert%E7%A9%BA%E9%97%B4%E7%9A%84%E8%A7%92%E5%BA%A6%E8%AF%81%E6%98%8E"><span class="nav-number">1.</span> <span class="nav-text">1. 从Hilbert空间的角度证明</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%BB%8E%E5%87%BD%E6%95%B0fxx%E5%9C%A8hilbert%E7%A9%BA%E4%B8%8A%E5%81%9A%E5%8D%95%E4%BD%8D%E6%AD%A3%E4%BA%A4%E5%9F%BA%E7%9A%84%E5%88%86%E8%A7%A3%E7%9A%84%E6%97%B6%E5%80%99%E8%A7%82%E5%AF%9F%E5%88%B0%E6%AD%A4%E5%87%BD%E6%95%B0%E7%9A%84%E5%9D%90%E6%A0%87%E8%A6%81%E4%B9%88%E6%98%AF%E5%B8%B8%E6%95%B0%E8%A6%81%E4%B9%88%E6%98%AFfrac2n%E9%82%A3%E4%B9%88%E5%B2%82%E4%B8%8D%E6%98%AF%E8%AF%B4%E4%BE%9D%E7%85%A7parseval%E6%81%92%E7%AD%89%E5%BC%8F%E5%8F%82%E8%80%83hilbert%E7%A9%BA%E9%97%B4%E5%BD%93%E4%B8%AD%E7%9A%84%E5%9F%BA%E7%9A%84%E5%9B%9B%E4%B8%AA%E7%AD%89%E4%BB%B7%E5%91%BD%E9%A2%98%E6%88%91%E4%BB%AC%E5%B0%B1%E8%83%BD%E5%BE%97%E5%88%B0sum_ngeq-1frac1n2"><span class="nav-number">2.</span> <span class="nav-text">从函数\(f(x):=x\)在Hilbert空上做单位正交基的分解的时候观察到此函数的"坐标"要么是常数，要么是\(\frac{2}{n}\),那么岂不是说，依照Parseval恒等式(参考[[Hilbert空间当中的基的四个等价命题]]),我们就能得到\(\sum_{n\geq 1}\frac{1}{n^2}\)?</span></a></li></ol><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%85%B7%E4%BD%93%E6%9D%A5%E8%AF%B4-l202pito-mathbbr-%E7%9A%84%E4%B8%80%E7%BB%84%E5%8D%95%E4%BD%8D%E6%AD%A3%E4%BA%A4%E5%9F%BA%E6%98%AFe_0xfrac1sqrt2pie_1xfrac1sqrtpicosxe_2xfrac1sqrtpisinxe_3xfrac1sqrtpicos2xe_4xfrac1sqrtpisin2x"><span class="nav-number"></span> <span class="nav-text">具体来说，
+\[L^2([0,2\pi]\to \mathbb{R})\]
+的一组单位正交基是\[e_0(x)=\frac{1}{\sqrt{2\pi}},e_1(x)=\frac{1}{\sqrt{\pi}}\cos(x),e_2(x)=\frac{1}{\sqrt{\pi}}\sin(x),e_3(x)=\frac{1}{\sqrt{\pi}}\cos(2x),e_4(x)=\frac{1}{\sqrt{\pi}}\sin(2x)\]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9E%84%E9%80%A0%E7%89%B9%E5%AE%9A%E5%87%BD%E6%95%B0%E5%B9%B6%E8%80%83%E8%99%91%E5%85%B6%E5%82%85%E9%87%8C%E5%8F%B6%E7%BA%A7%E6%95%B0%E5%B1%95%E5%BC%80"><span class="nav-number"></span> <span class="nav-text">2.
+构造特定函数并考虑其傅里叶级数展开</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8E%E5%B9%BF%E4%B9%89%E7%9A%84%E5%B9%85%E8%A7%92%E5%8E%9F%E7%90%86%E5%85%A5%E6%89%8B"><span class="nav-number"></span> <span class="nav-text">3. 从广义的幅角原理入手</span></a></li></div>
       </div>
       <!--/noindex-->
 
@@ -3425,6 +3445,12 @@ $$</p>
           <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
