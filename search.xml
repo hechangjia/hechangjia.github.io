@@ -37,6 +37,9 @@ href="https://hexo.io/docs/generating.html">Generating</a></p>
 href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">canvas</span> <span class="attr">id</span>=<span class="string">&quot;myCanvas&quot;</span> <span class="attr">width</span>=<span class="string">&quot;200&quot;</span> <span class="attr">height</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">canvas</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">const</span> canvas = <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;myCanvas&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">  <span class="keyword">const</span> ctx = canvas.<span class="title function_">getContext</span>(<span class="string">&quot;2d&quot;</span>);</span></span><br><span class="line"><span class="language-javascript">  ctx.<span class="property">fillStyle</span> = <span class="string">&quot;red&quot;</span>;</span></span><br><span class="line"><span class="language-javascript">  ctx.<span class="title function_">fillRect</span>(<span class="number">10</span>, <span class="number">10</span>, <span class="number">150</span>, <span class="number">80</span>);</span></span><br><span class="line"><span class="language-javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>[TOC]</p>
+<p><span class="math display">\[
+\int_{\infty}^{-\infty}f(x,y)dx
+\]</span></p>
 ]]></content>
   </entry>
   <entry>
