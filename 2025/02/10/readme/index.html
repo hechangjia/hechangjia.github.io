@@ -1490,7 +1490,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ee7188;
+  background: #589e4f;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3305,17 +3305,17 @@ mjx-container + br {
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-fa fa-tags"></i>标签<span class="badge">9</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-fa fa-tags"></i>标签<span class="badge">11</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">6</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">7</span></a>
 
   </li>
         <li class="menu-item menu-item-diaries">
@@ -3331,6 +3331,11 @@ mjx-container + br {
         <li class="menu-item menu-item-数据统计">
 
     <a href="/%E6%95%B0%E6%8D%AE%E7%BB%9F%E8%AE%A1/" rel="section"><i class="fa fa-fw fa-fa fa-calendar"></i>数据统计</a>
+
+  </li>
+        <li class="menu-item menu-item-ai">
+
+    <a href="/categories/ai/" rel="section"><i class="fa fa-fw fa-fa fa-ai"></i>AI</a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -3645,20 +3650,20 @@ Crash --&gt; [*]</pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">9</span>
+        <span class="site-state-item-count">11</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -3713,12 +3718,12 @@ Crash --&gt; [*]</pre>
     <span class="post-meta-item-icon">
       <i class="fa fa-area-chart"></i>
     </span>
-    <span title="站点总字数">4k</span>
+    <span title="站点总字数">5k</span>
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">4 分钟</span>
+    <span title="站点阅读时长">5 分钟</span>
 </div>
   <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> &amp; <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
   </div>
@@ -3947,7 +3952,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2025-02-10",5],["2025-02-13",1]]);
+                    const groupedData = groupByYear([["2025-02-10",5],["2025-02-13",1],["2025-02-21",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -4068,7 +4073,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [6],
+                            data: [7],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
@@ -4137,13 +4142,13 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"日记","value":1},{"name":"概率论","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"日记","value":1},{"name":"概率论","value":1},{"name":"ai","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"日记","value":1},{"name":"概率论","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"日记","value":1},{"name":"概率论","value":1},{"name":"ai","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4190,7 +4195,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"概率论","children":[],"count":1,"path":"概率论"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"ai","children":[],"count":1,"path":"ai"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',
