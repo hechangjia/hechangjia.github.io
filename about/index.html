@@ -1480,7 +1480,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #e92f4a;
+  background: #df22ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3626,7 +3626,7 @@ mjx-container + br {
     
 
 
-
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"></script>
         
         
     
@@ -3733,7 +3733,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
             document.addEventListener("DOMContentLoaded", function() {
                 const heatmapChartDom = document.getElementById('heatmapChart');
                 if(heatmapChartDom){
-                    const heatmapChart = echarts.init(heatmapChartDom, 'dark');
+                    const heatmapChart = echarts.init(heatmapChartDom, 'light');
                     const cellSize = [18, 18];
                     
                     const groupByYear = (data) => {
@@ -3858,7 +3858,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
             document.addEventListener("DOMContentLoaded", function() {
                 const monthlyChartDom = document.getElementById('monthlyChart');
                 if(monthlyChartDom){
-                    const monthlyChart = echarts.init(monthlyChartDom, 'dark');
+                    const monthlyChart = echarts.init(monthlyChartDom, 'light');
                     monthlyChart.setOption({
                         xAxis: { 
                             type: 'category', 
@@ -3898,7 +3898,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
             document.addEventListener("DOMContentLoaded", function() {
                 const tagsChartDom = document.getElementById('tagsChart');
                 if(tagsChartDom){
-                    const tagsChart = echarts.init(tagsChartDom, 'dark');
+                    const tagsChart = echarts.init(tagsChartDom, 'light');
                     tagsChart.setOption({
                         tooltip: { trigger: 'item', formatter: '{b}: {c} ({d}%)' },
                         series: [{
@@ -3933,7 +3933,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
             document.addEventListener("DOMContentLoaded", function() {
                 const categoriesChartDom = document.getElementById('categoriesChart');
                 if(categoriesChartDom){
-                    const categoriesChart = echarts.init(categoriesChartDom, 'dark');
+                    const categoriesChart = echarts.init(categoriesChartDom, 'light');
                     categoriesChart.setOption({
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
@@ -3973,7 +3973,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
             document.addEventListener("DOMContentLoaded", function() {
                 const categoriesTreeChartDom = document.getElementById('categoriesTreeChart');
                 if(categoriesTreeChartDom){
-                    const treeChart = echarts.init(categoriesTreeChartDom, 'dark');
+                    const treeChart = echarts.init(categoriesTreeChartDom, 'light');
                     treeChart.setOption({
                         title: {
                             text: '操作提示：单击展开分类，双击进入具体分类页面',
