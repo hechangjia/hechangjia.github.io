@@ -32,7 +32,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Sidebar Display (only for Muse | Mist), available values":null,"display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Sidebar Display (only for Muse | Mist), available values":null,"display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
   </script>
 
   <meta property="og:type" content="article">
@@ -1487,7 +1487,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #acd036;
+  background: #0fff77;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3387,7 +3387,7 @@ mjx-container[display="true"] + br {
       <h1 class="site-title">Moderation-中庸</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
-      <p class="site-subtitle" itemprop="description">everyone progresses at their own pace. Understand that challenges are part of the journey, and it is okay to take your time.</p>
+      <p class="site-subtitle" itemprop="description">幸福不是去拥有什么,而是知道自己拥有什么.</p>
   </div>
 
   <div class="site-nav-right">
@@ -3927,6 +3927,9 @@ mjx-container[display="true"] + br {
     
     
 
+
+
+
 <script src="/bundle.js"></script><script>
   fetch('https://v1.hitokoto.cn?c=a&c=i&c=j&encode=json&charset=utf-8')
     .then(response => response.json())
@@ -4063,7 +4066,6 @@ if (document.querySelectorAll('pre.mermaid').length) {
         );
     });
     ;
-L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});;
 
             document.addEventListener("DOMContentLoaded", function() {
                 const heatmapChartDom = document.getElementById('heatmapChart');
@@ -4239,7 +4241,7 @@ L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","p
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"demo","value":3},{"name":"latex","value":2},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}],
+                            data: [{"name":"demo","value":3},{"name":"latex","value":2},{"name":"clippings","value":1},{"name":"ai","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -4253,7 +4255,7 @@ L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","p
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"demo","value":3},{"name":"latex","value":2},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}].map(tag => tag.name),
+                            data: [{"name":"demo","value":3},{"name":"latex","value":2},{"name":"clippings","value":1},{"name":"ai","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
@@ -4273,13 +4275,13 @@ L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","p
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"日记","value":1},{"name":"概率论","value":1},{"name":"ai","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"日记","value":1},{"name":"ai","value":1},{"name":"概率论","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"日记","value":1},{"name":"概率论","value":1},{"name":"ai","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"日记","value":1},{"name":"ai","value":1},{"name":"概率论","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4326,7 +4328,7 @@ L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","p
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"ai","children":[],"count":1,"path":"ai"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"ai","children":[],"count":1,"path":"ai"},{"name":"概率论","children":[],"count":1,"path":"概率论"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',
@@ -4370,4 +4372,5 @@ L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","p
                     });
                 }
             });
-        </script></body></html>
+        ;
+L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html><!-- 页面点击小红心 -->
