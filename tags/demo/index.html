@@ -1487,7 +1487,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff3e;
+  background: #ffc208;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3976,13 +3976,13 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"概率论","value":1},{"name":"日记","value":1},{"name":"南邮","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"南邮","value":1},{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"概率论","value":1},{"name":"日记","value":1},{"name":"南邮","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"南邮","value":1},{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4029,7 +4029,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"南邮","children":[],"count":1,"path":"南邮"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"南邮","children":[],"count":1,"path":"南邮"},{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',

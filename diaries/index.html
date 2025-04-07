@@ -1490,7 +1490,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #ffff3e;
+  background: #ffc208;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3412,10 +3412,8 @@ mjx-container + br {
       
       
       <div class="post-body">
-          <h3 id="blog-heatmap">Blog Heatmap</h3>
-<div id="heatmapChart" style="width: 100%; height: 200px; overflow-x: auto; overflow-y: hidden;">
-
-</div>
+          <h3 id="Blog-Heatmap">Blog Heatmap</h3>
+<div id="heatmapChart" style="width: 100%; height: 200px; overflow-x: auto; overflow-y: hidden;"></div>
 
       </div>
       
@@ -3457,7 +3455,7 @@ mjx-container + br {
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#blog-heatmap"><span class="nav-number">1.</span> <span class="nav-text">Blog Heatmap</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Blog-Heatmap"><span class="nav-number">1.</span> <span class="nav-text">Blog Heatmap</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -3957,13 +3955,13 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"概率论","value":1},{"name":"日记","value":1},{"name":"南邮","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"南邮","value":1},{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"概率论","value":1},{"name":"日记","value":1},{"name":"南邮","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"南邮","value":1},{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4010,7 +4008,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"南邮","children":[],"count":1,"path":"南邮"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"南邮","children":[],"count":1,"path":"南邮"},{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',
