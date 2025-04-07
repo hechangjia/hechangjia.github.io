@@ -1488,7 +1488,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #cfff6a;
+  background: #7d73e5;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3303,17 +3303,17 @@ mjx-container + br {
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-fw fa-fa fa-tags"></i>标签<span class="badge">11</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-fa fa-tags"></i>标签<span class="badge">9</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">7</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-diaries">
@@ -3412,10 +3412,10 @@ mjx-container + br {
       <div class="post-body">
           <div class="category-all-page">
             <div class="category-all-title">
-              目前共计 3 个分类
+              目前共计 2 个分类
             </div>
             <div class="category-all">
-              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/ai/">ai</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a><span class="category-list-count">1</span></li></ul>
+              <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%97%A5%E8%AE%B0/">日记</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA/">概率论</a><span class="category-list-count">1</span></li></ul>
             </div>
           </div>
         
@@ -3473,20 +3473,20 @@ mjx-container + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -3768,7 +3768,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2025-02-10",5],["2025-02-13",1],["2025-02-21",1]]);
+                    const groupedData = groupByYear([["2025-02-10",3],["2025-02-13",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -3889,7 +3889,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [7],
+                            data: [4],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
@@ -3924,7 +3924,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"demo","value":3},{"name":"latex","value":2},{"name":"clippings","value":1},{"name":"ai","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1}],
+                            data: [{"name":"demo","value":2},{"name":"latex","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -3938,7 +3938,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"demo","value":3},{"name":"latex","value":2},{"name":"clippings","value":1},{"name":"ai","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1}].map(tag => tag.name),
+                            data: [{"name":"demo","value":2},{"name":"latex","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
@@ -3958,13 +3958,13 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"日记","value":1},{"name":"ai","value":1},{"name":"概率论","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"日记","value":1},{"name":"ai","value":1},{"name":"概率论","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4011,7 +4011,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"ai","children":[],"count":1,"path":"ai"},{"name":"概率论","children":[],"count":1,"path":"概率论"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',
