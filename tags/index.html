@@ -1488,7 +1488,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #0fff11;
+  background: #e2bbff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3308,12 +3308,12 @@ mjx-container + br {
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">2</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">4</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">5</span></a>
 
   </li>
         <li class="menu-item menu-item-diaries">
@@ -3473,14 +3473,14 @@ mjx-container + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">4</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -3768,7 +3768,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2025-02-10",3],["2025-02-13",1]]);
+                    const groupedData = groupByYear([["2025-02-10",3],["2025-02-13",1],["2025-04-07",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -3882,14 +3882,14 @@ if (document.querySelectorAll('pre.mermaid').length) {
                     monthlyChart.setOption({
                         xAxis: { 
                             type: 'category', 
-                            data: ["2025-02"], 
+                            data: ["2025-02","2025-04"], 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         yAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [4],
+                            data: [4,1],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
@@ -3958,13 +3958,13 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"概率论","value":1},{"name":"日记","value":1},{"name":"南邮","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"概率论","value":1},{"name":"日记","value":1},{"name":"南邮","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4011,7 +4011,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"},{"name":"南邮","children":[],"count":1,"path":"南邮"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',

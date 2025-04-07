@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-04-07T10:56:47.186Z</updated>
+  <updated>2025-04-07T11:42:31.087Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>向新生介绍南邮</title>
+    <link href="http://example.com/2025/04/07/%E5%90%91%E6%96%B0%E7%94%9F%E4%BB%8B%E7%BB%8D%E5%8D%97%E9%82%AE/"/>
+    <id>http://example.com/2025/04/07/%E5%90%91%E6%96%B0%E7%94%9F%E4%BB%8B%E7%BB%8D%E5%8D%97%E9%82%AE/</id>
+    <published>2025-04-07T11:37:00.000Z</published>
+    <updated>2025-04-07T11:42:31.087Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="各位大家好">各位大家好</h1><h1 id="南邮的春景">南邮的春景</h1><!-- raw html --><div id="image-container"><p><img id="resizable-image" src="src/images/lovely.png" alt="Image test" style="width: 500px;"><label for="image-size">调整图片大小:</label><input type="range" id="image-size" min="100" max="1000" value="500"></p></div><script>    document.addEventListener("DOMContentLoaded", function() {        const imageSizeInput = document.getElementById('image-size');        const resizableImage = document.getElementById('resizable-image');        imageSizeInput.addEventListener('input', function() {            resizableImage.style.width = this.value + 'px';        });    });</script><!-- end raw html --><!-- raw html --><div id="image-container"><p><img id="resizable-image" src="src/images/春景1.jpg" alt="Image test" style="width: 500px;"><label for="image-size">调整图片大小:</label><input type="range" id="image-size" min="100" max="1000" value="500"></p></div><script>    document.addEventListener("DOMContentLoaded", function() {        const imageSizeInput = document.getElementById('image-size');        const resizableImage = document.getElementById('resizable-image');        imageSizeInput.addEventListener('input', function() {            resizableImage.style.width = this.value + 'px';        });    });</script><!-- end raw html --><!-- raw html --><div id="image-container"><p><img id="resizable-image" src="src/images/春景2.jpg" alt="Image test" style="width: 500px;"><label for="image-size">调整图片大小:</label><input type="range" id="image-size" min="100" max="1000" value="500"></p></div><script>    document.addEventListener("DOMContentLoaded", function() {        const imageSizeInput = document.getElementById('image-size');        const resizableImage = document.getElementById('resizable-image');        imageSizeInput.addEventListener('input', function() {            resizableImage.style.width = this.value + 'px';        });    });</script><!-- end raw html -->]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;各位大家好&quot;&gt;各位大家好&lt;/h1&gt;
+&lt;h1 id=&quot;南邮的春景&quot;&gt;南邮的春景&lt;/h1&gt;
+&lt;!-- raw html --&gt;
+&lt;div id=&quot;image-container&quot;&gt;
+&lt;p&gt;&lt;img id=&quot;resizable-image&quot; src=&quot;src/image</summary>
+      
+    
+    
+    
+    <category term="南邮" scheme="http://example.com/categories/%E5%8D%97%E9%82%AE/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>日记模板</title>
