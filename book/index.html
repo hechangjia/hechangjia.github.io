@@ -35,10 +35,12 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","Sidebar Display (only for Muse | Mist), available values":null,"display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":false,"style":"mac"},"back2top":{"enable":true,"sidebar":true,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"manual"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"./public/search.xml"};
   </script>
 
-  <meta property="og:type" content="website">
+  <meta name="description" content="无限进步">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Book">
 <meta property="og:url" content="http://example.com/book/index.html">
 <meta property="og:site_name" content="Moderation-中庸">
+<meta property="og:description" content="无限进步">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-03-25T01:08:29.000Z">
 <meta property="article:modified_time" content="2025-04-07T10:56:47.704Z">
@@ -1488,7 +1490,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #2f60c9;
+  background: #4aff0d;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -3308,12 +3310,12 @@ mjx-container + br {
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-fa fa-th"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">5</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-fa fa-archive"></i>归档<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-diaries">
@@ -3411,7 +3413,6 @@ mjx-container + br {
       
       <div class="post-body">
           
-
       </div>
       
       
@@ -3466,14 +3467,14 @@ mjx-container + br {
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -3742,6 +3743,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
         );
     });
     ;
+L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});;
 
             document.addEventListener("DOMContentLoaded", function() {
                 const heatmapChartDom = document.getElementById('heatmapChart');
@@ -3761,7 +3763,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2025-02-10",3],["2025-02-13",1],["2025-04-07",1]]);
+                    const groupedData = groupByYear([["2025-02-10",3],["2025-02-13",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -3875,14 +3877,14 @@ if (document.querySelectorAll('pre.mermaid').length) {
                     monthlyChart.setOption({
                         xAxis: { 
                             type: 'category', 
-                            data: ["2025-02","2025-04"], 
+                            data: ["2025-02"], 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         yAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [4,1],
+                            data: [4],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
@@ -3917,7 +3919,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"demo","value":3},{"name":"test","value":2},{"name":"try","value":2},{"name":"latex","value":1},{"name":"pdf","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}],
+                            data: [{"name":"demo","value":2},{"name":"latex","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -3931,7 +3933,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"demo","value":3},{"name":"test","value":2},{"name":"try","value":2},{"name":"latex","value":1},{"name":"pdf","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}].map(tag => tag.name),
+                            data: [{"name":"demo","value":2},{"name":"latex","value":1},{"name":"pdf","value":1},{"name":"test","value":1},{"name":"try","value":1},{"name":"math","value":1},{"name":"调和分析","value":1},{"name":"微积分","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
@@ -3951,13 +3953,13 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"南邮","value":1},{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"南邮","value":1},{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"概率论","value":1},{"name":"日记","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -4004,7 +4006,7 @@ if (document.querySelectorAll('pre.mermaid').length) {
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"南邮","children":[],"count":1,"path":"南邮"},{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"概率论","children":[],"count":1,"path":"概率论"},{"name":"日记","children":[],"count":1,"path":"日记"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',
@@ -4048,5 +4050,4 @@ if (document.querySelectorAll('pre.mermaid').length) {
                     });
                 }
             });
-        ;
-L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body></html><!-- 页面点击小红心 -->
+        </script></body></html><!-- 页面点击小红心 -->
