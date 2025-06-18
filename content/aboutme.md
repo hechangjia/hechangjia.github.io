@@ -1,11 +1,16 @@
 ---
-title: Profile
+title: Aboutme
 draft: false
 tags:
   - aboutme
 ---
- 
+
 The rest of your content lives here. You can use **Markdown** here :)
+
+
+
+![个人头像](./assets/images/头像.png)
+
 ## Hi there 👋 My name is HeChangjia
 ![](https://komarev.com/ghpvc/?username=hechangjia&color=green)
 ![](https://komarev.com/ghpvc/?username=hechangjia&abbreviated=true)
