@@ -1,3 +1,7 @@
 @use "./base.scss";
 
 // put your custom CSS here!
+// 隐藏 Quartz 版权信息
+footer > p {
+  display: none !important;
+}

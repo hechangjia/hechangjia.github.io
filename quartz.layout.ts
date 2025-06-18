@@ -8,9 +8,11 @@ export const sharedPageComponents: SharedLayout = {
   afterBody: [],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/jackyzha0/quartz",
-      "Discord Community": "https://discord.gg/cRFFHYye7t",
+      GitHub: "https://github.com/hechangjia",
+      Email: "mailto:2136414704@qq.com",
+      "☕ 请我喝咖啡和我的联系方式": "/sponsor", // 链接到赞助页面
     },
+    displayTimestamp: false  // 添加这行来禁用版权信息
   }),
 }
 
