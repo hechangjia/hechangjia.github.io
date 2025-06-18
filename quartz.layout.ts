@@ -11,6 +11,8 @@ export const sharedPageComponents: SharedLayout = {
       GitHub: "https://github.com/hechangjia",
       Email: "mailto:2136414704@qq.com",
       "☕ 请我喝咖啡和我的联系方式": "/sponsor", // 链接到赞助页面
+      "我所欣赏,仰慕的人": "/appreciation", // 链接到欣赏页面
+      "我喜欢的音乐": "/music", // 链接到音乐页面
     },
     displayTimestamp: false  // 添加这行来禁用版权信息
   }),
