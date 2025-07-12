@@ -1,5 +1,5 @@
 ---
-title: "请我喝杯咖啡和我的联系方式"
+title: "我的联系方式"
 ---
 
 # 请我喝杯咖啡 ☕
@@ -22,16 +22,23 @@ title: "请我喝杯咖啡和我的联系方式"
 
 ### QQ
 
-1. ![QQ](./assets/images/QQ1.jpg)
-
-2. ![QQ](./assets/images/QQ2.jpg)
-
+![[QQ.jpg]]
 ### 微信
-![微信](./assets/images/wechat.png)
+
+![[wechat.png]]
+
+### 抖音
+
+![[douyin.png]]
+
+
+### 小红书
+
+![[xiaohongshu.jpg]]
 
 ### Telegram
-![电报](./assets/images/Telegram.jpg)
 
+![[Telegram.jpg]]
 
 ## 感谢您的支持！
 
