@@ -44,3 +44,15 @@ title: 我喜欢的音乐
 </iframe>
 
 
+## 嵌入PDF
+
+**测试**
+[PDF](./assets/pdfs/第一章.pdf)
+
+<iframe 
+  src="./assets/pdfs/第一章.pdf" 
+  width="100%" 
+  height="600px"
+>
+  <p>您的浏览器不支持PDF预览，请<a href="./assets/pdfs/第一章.pdf">下载文件</a></p>
+</iframe>
